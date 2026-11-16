@@ -1,0 +1,45 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python bytecode & caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# macOS & IDE files
+.DS_Store
+**/.DS_Store
+.vscode/
+.idea/
+
+# Model weights & Ultralytics training runs (keep only production 6.5 MB weights)
+models/*.pt
+!models/best_yolov8n_pose.pt
+!models/.gitkeep
+runs/
+*.onnx
+*.engine
+
+# Raw videos, training frames & annotated videos (strict employee privacy & GitHub 100 MB limit)
+data/raw_videos/*
+!data/raw_videos/.gitkeep
+data/fine_tune_pose/
+outputs/videos/*
+!outputs/videos/.gitkeep
+
+# Telemetry: publish only anonymized features & calibrated thresholds for live Streamlit demo
+outputs/telemetry/*
+!outputs/telemetry/.gitkeep
+!outputs/telemetry/temporal_features.csv
+!outputs/telemetry/calibrated_thresholds.json
+
+# Plots: block any frame-capture grids showing employee faces; allow pure mathematical charts
+outputs/plots/*visual_verification*.png
+outputs/plots/*reid*verification*.png
+!outputs/plots/.gitkeep
+
+# Keep anonymized executive reports (dashboard snapshot, KPI CSV/JSON & PDF report)
+!outputs/reports/.gitkeep
