@@ -1,18 +1,13 @@
-# Interactive Executive Dashboard & Reporting (Milestone 3 / Streamlit Cloud)
-streamlit>=1.38.0
-plotly>=5.22.0
-pandas>=2.0.0
-pyarrow>=15.0.0
+# Core Computer Vision & Pose Estimation
+ultralytics==8.4.211
+opencv-python==4.11.0.86
+mediapipe==0.10.14
 
-# Numerical, Kalman Smoothing, Calibration & Columnar Analytics (Milestones 1 & 2)
-numpy>=1.26.0
-scipy>=1.11.0
-polars>=1.0.0
-matplotlib>=3.8.0
+# Numerical, Filtering & Scientific Computing
+numpy==2.0.2
+scipy==1.13.1
+polars==1.36.1
 
-# Computer Vision & Fine-Tuned YOLOv8-Pose Inference
-opencv-python-headless>=4.9.0
-ultralytics>=8.2.0
+# Visualization & Calibration Plotting
+matplotlib==3.9.4
 
-# Optional legacy baseline POC only (scripts/legacy_mediapipe_poc.py, Python <=3.11):
-# mediapipe==0.10.14
